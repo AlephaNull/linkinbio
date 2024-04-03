@@ -1,0 +1,14 @@
+{
+  "name": "linkinbio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss css/style.css -o css/styles.css",
+    "dev": "npm run build && live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
