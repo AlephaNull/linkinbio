@@ -1,17 +1,21 @@
 body {
   background-color: #14191a;
+  overflow: hidden;
 }
-
 
 .container {
   display: flex;
   flex-direction: column;
   gap: 5px;
   align-items: center;
-  justify-content: center;
-
+  /* justify-content: center; */
+  position: relative;
+  top: 0;
+  left: 0;
 }
+
 ul {
+  display: none;
   color: #ffffff;
   list-style: none;
 }
@@ -19,13 +23,29 @@ ul {
 li {
   border-style: solid;
   border-color: white;
-  width: 5em;
+  width: 15em;
   height: 1em;
   text-align: center;
   background-color: grey;
-  margin-left:auto;
-  margin-right:auto;
   padding: 1em;
-  /* position: relative; */
-  /* top: 5em; */
+  overflow: hidden;
+}
+
+h1,h2 {
+  color: #ffffff;
+}
+
+img {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 650px) {
+  li {
+    width: 90vw;
+    overflow: hidden;
+    margin: 0;
+    margin-left: 0;
+  }
 }
